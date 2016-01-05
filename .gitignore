@@ -228,6 +228,9 @@ pip-log.txt
 #Translations
 *.mo
 
+#PhpStorm
+.idea/
+
 #Mr Developer
 .mr.developer.cfg
 Status API Training Shop Blog About Pricing

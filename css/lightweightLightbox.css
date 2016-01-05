@@ -1,3 +1,7 @@
+.lightbox-image{
+    cursor:pointer;
+}
+
 .lightbox{
     background:rgba(0,0,0,0.93);
     bottom:0;
