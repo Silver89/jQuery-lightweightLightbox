@@ -67,6 +67,17 @@ The following is a basic example of how to use the plugin.
     </html>
 ```
 
+There is now additional support to dynamically extend the lightbox if new elements are loaded in post page build. You can now run the following after you've loaded content and this will refresh the count.
+``` javascript
+<script type="text/javascript">
+var lightweightLightbox = $(".lightbox-container").lightweightLightbox();
+
+//After loading of new content run
+lightweightLightbox.refreshElementCount();
+</script>
+```
+
+
 ### Support
 
 Tested and working in the following:

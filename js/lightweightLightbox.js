@@ -147,6 +147,12 @@
         $(document).on("click", ".lightbox .close", function(){
             closeLightbox();
         });
+
+        return {
+            refreshElementCount: function () {
+                elementIndexCount = ($(".lightbox-container .box").length - 1);
+            }
+        }
     }
 
 }(jQuery));
