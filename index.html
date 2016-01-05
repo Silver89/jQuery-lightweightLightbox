@@ -41,7 +41,81 @@
 
 <ol>
 <li>Download the lightweightLightbox jQuery plugin and css files, you can choose the lightweightLightbox.js version or the lightweightLightbox.min.js for faster load times</li>
-<li>Include both jQuery and the plugin file in your HTML, ideally before the </li>
+<li>Include both jQuery and the plugin file in your HTML, ideally before the <code>&lt;/body&gt;</code> tag, the plugin must be after jQuery.</li>
+<li>Include the css file in your header</li>
+<li>Initiate the plugin using: <code>$(".lightbox-container").lightweightLightbox();</code>
+</li>
+<li>Follow markup instructions</li>
+<li>Add FontAwesome for the chevron and close icons: <a href="https://fortawesome.github.io/Font-Awesome/get-started/">https://fortawesome.github.io/Font-Awesome/get-started/</a>
+</li>
+</ol>
+
+<h3>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h3>
+
+<p>You can view a live demo at the following location: <a href="http://github.drttrd.com/jquery-lightweightLightbox/demo.html" target="_blank">jQuery Lightweight Lightbox Demo</a></p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>The following is a basic example of how to use the plugin.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>    &lt;!DOCTYPE html&gt;
+    &lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">head</span>&gt;
+        &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>css/lightweightLightbox.css<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">title</span>&gt;LightweightLightbox jQuery plugin demo&lt;/<span class="pl-ent">title</span>&gt;
+    &lt;/<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">body</span>&gt;
+
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-container<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">img</span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>An example image 1<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-image<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>images/example-1.jpg<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">img</span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>An example image 2<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-image<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>images/example-2.jpg<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">img</span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>An example image 3<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-image<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>images/example-3.jpg<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">img</span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>An example image 4<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-image<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>images/example-4.jpg<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">img</span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>An example image 5<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>lightbox-image<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>images/example-5.jpg<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/lightweightLightbox.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
+<span class="pl-s1">        <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.lightbox-container<span class="pl-pds">"</span></span>).<span class="pl-en">lightweightLightbox</span>();</span>
+<span class="pl-s1">    &lt;/<span class="pl-ent">script</span>&gt;</span>
+
+    &lt;/<span class="pl-ent">body</span>&gt;
+    &lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<p>There is now additional support to dynamically extend the lightbox if new elements are loaded in post page build. You can now run the following after you've loaded content and this will refresh the count.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+<span class="pl-k">var</span> lightweightLightbox <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.lightbox-container<span class="pl-pds">"</span></span>).<span class="pl-en">lightweightLightbox</span>();
+
+<span class="pl-c">//After loading of new content run</span>
+<span class="pl-smi">lightweightLightbox</span>.<span class="pl-en">refreshElementCount</span>();
+<span class="pl-k">&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span></pre></div>
+
+<h3>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h3>
+
+<p>Tested and working in the following:</p>
+
+<ol>
+<li>Chrome 47</li>
+<li>Firefox 42</li>
+<li>Microsoft Edge 25</li>
 </ol>
 
       <footer class="site-footer">
