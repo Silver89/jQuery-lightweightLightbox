@@ -1,0 +1,34 @@
+{
+  "name": "lightweightLightbox",
+  "title": "jQuery Lightweight Lightbox",
+  "description": "jQuery plugin for a simple, responsive and lightweight lightbox.",
+  "keywords": [
+    "lightbox",
+    "gallery",
+    "photos"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Dan Thorpe",
+    "url": "https://uk.linkedin.com/in/danrthorpe/"
+  },
+  "maintainers": [
+    {
+      "name": "Dan Thorpe",
+      "url": "https://github.com/Silver89"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Silver89/jQuery-lightweightLightbox/blob/master/LICENSE.md"
+    }
+  ],
+  "bugs": "https://github.com/Silver89/jQuery-lightweightLightbox/issues",
+  "homepage": "https://github.com/Silver89/jQuery-lightweightLightbox",
+  "docs": "https://github.com/Silver89/jQuery-lightweightLightbox",
+  "download": "https://github.com/Silver89/jQuery-lightweightLightbox/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}

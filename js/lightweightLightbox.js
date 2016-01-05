@@ -1,6 +1,6 @@
 /*
- * LightweightLightbox.js v1.0
- * http://uk.linkedin.com/in/danrthorpe/
+ * LightweightLightbox.js v1.0.0
+ * https://uk.linkedin.com/in/danrthorpe/
  *
  * Copyright 2016, Dan Thorpe
  * This content is released under the MIT license
