@@ -18,7 +18,7 @@
     -ms-user-select: none;
     user-select: none;
     width:100%;
-    z-index:500;
+    z-index:2500;
 }
 
 .lightbox .content{
@@ -54,7 +54,7 @@
     opacity:1;
     position: absolute;
     text-shadow: none;
-    z-index:501;
+    z-index:2501;
 }
 
 .lightbox .close{
